@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+experiments/grassmannian
+experiments/line-search
+*.aux
+*.log
+*.xdv
+*.out

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "date": "2026-10-17",
+  "claim": "The two displayed diagonal twists have the same zeta function and different rational plane counts.",
+  "base_primes": [7, 13, 19, 31, 37, 43, 61, 67, 73, 79, 97],
+  "extensions": [[7,[1,0,1]], [7,[2,0,0,1]], [13,[2,0,1]], [19,[1,0,1]]],
+  "projective_enumeration_primes": [7,13],
+  "grassmannian_enumeration_prime": 7,
+  "labeled_class_vectors": "all 3^6 = 729",
+  "timings": "single machine wall clock; no speedup claim",
+  "note": "Protocol fixed before the main experiment run, not publicly preregistered."
+}

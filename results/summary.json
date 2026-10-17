@@ -1,0 +1,16 @@
+{
+  "protocol_sha256": "558986a6a79eef46fbbdc4699e079c226e05a3d77f1c6e592a2daf982ee5bdfb",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "class_vectors": 729,
+  "point_count_cases": 150,
+  "projective_enumerations": 20,
+  "plane_substitutions": 6534,
+  "failures": 0,
+  "elapsed_seconds": 3.398236459,
+  "J7": [
+    -1,
+    -3
+  ],
+  "A7": -91
+}
