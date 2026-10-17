@@ -1,0 +1,17 @@
+name: Exact verification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce all exact computations
+        run: |
+          python3 experiments/run.py
+          python3 experiments/classify.py
+          python3 experiments/field_checks.py
+          c++ -O2 -std=c++17 tests/grassmannian.cpp -o /tmp/plane-search
+          /tmp/plane-search results/grassmannian.csv
+          c++ -O2 -std=c++17 tests/lines.cpp -o /tmp/line-search
+          /tmp/line-search results/lines.csv
+          python3 experiments/verify.py
